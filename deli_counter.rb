@@ -4,8 +4,8 @@ def line(peopleInLine)
     puts "The line is currently empty."
   else
     orderedLine = []
-    peopleInLine.each_with_index {|name, i| orderedLine << "#{i+1}. #{name} "}
-    puts "The line is currently: #{orderedLine.join}"
+    peopleInLine.each_with_index {|name, i| orderedLine << "#{i+1}. #{name}"}
+    puts "The line is currently: #{orderedLine.join(' ')}"
   end
 end
 
